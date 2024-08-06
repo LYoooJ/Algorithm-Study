@@ -1,7 +1,6 @@
 #include <string>
 #include <vector>
 #include <algorithm>
-#include <iostream>
 
 using namespace std;
 
@@ -14,8 +13,8 @@ string solution(vector<int> numbers) {
     string answer = "";
     vector<string> v;
     
-    for (int i = 0; i < numbers.size(); i++) 
-        v.push_back(to_string(numbers[i]));
+    for (vector<int>::iterator iter = numbers.begin(); iter != numbers.end(); iter++) 
+        v.push_back(to_string(*iter));
     
     sort(v.begin(), v.end(), string_cmp);
     
