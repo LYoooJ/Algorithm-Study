@@ -2,7 +2,6 @@
 #include <vector>
 #include <queue>
 #include <map>
-#include <iostream>
 
 using namespace std;
 
@@ -25,7 +24,7 @@ vector<int> solution(vector<string> operations) {
             min_heap.push(num);
             size++;
         } 
-        else { // if operation 
+        else { // if operation D
             if (size == 0)
                 continue;
             if (num == 1) { 
