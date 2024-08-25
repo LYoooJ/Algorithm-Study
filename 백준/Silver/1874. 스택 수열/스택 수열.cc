@@ -10,7 +10,6 @@ int main(void) {
     cout.tie(NULL);
 
     int N, sequence, num = 1;
-    bool flag = true;
     stack<int> stk;
     vector<char> v;
 
