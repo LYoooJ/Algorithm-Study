@@ -43,12 +43,8 @@ int main(void) {
     }
 
     for (int i = 0; i < empty.size(); i++) {
-        for (int j = 0; j < empty.size(); j++) {
-            if (i == j)
-                continue;
-            for (int k = 0; k < empty.size(); k++) {
-                if (i == k || j == k)
-                    continue;
+        for (int j = i + 1; j < empty.size(); j++) {
+            for (int k = j + 1; k < empty.size(); k++) {
                 init_v(v, original);
                 init_vistied(visited);
                 int virus_area = 0;
@@ -56,8 +52,6 @@ int main(void) {
                 v[empty[j].r][empty[j].c] = 1;
                 v[empty[k].r][empty[k].c] = 1;
                 
-                if (empty[i].r == 2 && empty[i].c == 3 && empty[j].r == 1 && empty[j].c == 4 && empty[k].r == 0 && empty[k].c == 5)
-                    int n = 0;
                 for (vector<Point>::iterator iter = virus.begin(); iter != virus.end(); iter++) {
                     if (!visited[iter->r][iter->c]) {
                         virus_area += bfs(v, visited, { iter->r, iter->c });
