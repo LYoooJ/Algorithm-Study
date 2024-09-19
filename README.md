@@ -1,14 +1,14 @@
 # Algorithm-Study
 
 ## Rule
-- 하루에 최소 한 문제 풀기
+- 자기 이름 폴더에 코드 업로드
+- 원본 저장소로 pull request
 
-## Step
-### 코딩테스트 고득점 kit
-- https://school.programmers.co.kr/learn/challenges?tab=algorithm_practice_kit
+## Commit Rule
+- [플랫폼] 문제 번호 문제 이름
 
+  ex) ```git commit -m "[Baekjoon] 7569. 토마토"```
 ## Reference
 ### GitHub 관리
-- https://velog.io/@mandarin913/%EC%8A%A4%ED%84%B0%EB%94%94-GitHub-%EC%82%AC%EC%9A%A9-%EB%B0%A9%EB%B2%95
-### GitHub 자동 커밋
-- https://oliviakim.tistory.com/34
+- https://waytocse.tistory.com/59
+- https://velog.io/@jisubin12/Github-%EC%99%B8%EB%B6%80%EC%A0%80%EC%9E%A5%EC%86%8C-fork-pull-request-%EB%8F%99%EA%B8%B0%ED%99%94-%ED%95%98%EA%B8%B0
